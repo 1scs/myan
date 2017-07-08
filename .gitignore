@@ -1,0 +1,15 @@
+*.WAR
+*.war
+*.class
+*.CLASS
+*.EXE
+*.exe
+*.tar
+*.TAR
+*.dll
+*.DLL
+*.zip
+*.ZIP
+build/
+.gradle/
+/bin/

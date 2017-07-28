@@ -13,11 +13,13 @@ eclipse.wtp.component
  resource sourcePath: "myanfc/scripts", deployPath: "/scripts"
  resource sourcePath: "myanfc/stats", deployPath: "/stats"
  resource sourcePath: "myanfc/styles", deployPath: "/styles"
+ resource sourcePath: "myanfc/WEB-INF", deployPath: "/WEB-INF"
 }
 
 war 
 {
  archiveName = 'myanfc.war'
+ webXml =file('myanfc/WEB-INF/web.xml') 
  from('myanfc')
  {
   include ".errordocs"
@@ -28,6 +30,7 @@ war
   include "scripts/"
   include "stats/"
   include "styles/"
+  include "WEB-INF/"    
   include ".htaccess"
   include "aboutus.html"  
   include "compliance.html" 

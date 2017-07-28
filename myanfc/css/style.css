@@ -1,0 +1,190 @@
+/* ************************************************   
+Template Name: Grungy Coming soon
+Description: Grunge Experience is a coming soon template with unique grunge design. 
+Author: strangerr 
+Author URI: http://themeforest.net/user/strangerr 
+Version: 1.0 
+
+************************************************ */
+
+
+/****************** GLOBAL SETTINGS **************/
+
+* {margin:0; padding:0}
+html, body {
+	background-color:#f8f8f8
+}
+h3 {
+	font-size:24px;
+	color:#D77389;
+	letter-spacing:1px;
+	margin-left:15px;
+	margin-top:15px;
+	text-align: center;
+}
+.phone h3 {
+	font-size:24px;
+	color:#0D0D0D;
+	letter-spacing:1px;
+	margin-left:15px;
+	margin-top:15px;
+	text-align: center;
+}
+.phone {
+	font-size:24px;
+	color:#0D0D0D;
+	letter-spacing:1px;
+	margin-left:15px;
+	margin-top:15px;
+	text-align: center
+}
+
+.clear{clear:both}
+img{border:none}
+
+/*************************************************/
+
+
+/*************** COUNTDOWN WIDGET ****************/
+
+#countdown {
+	background-image:url('../images/countdown_bg.png');
+	width:800px;
+	margin-top:5px;
+	position:relative;
+}
+#time {color:#aeaeae;font-size:28px;letter-spacing:2px; position:absolute; top:0px; left:0px; width:100%}
+#time div{float:left; width:160px; height:120px; text-align:center; margin:86px 0 0 0px;}
+.days, .hours, .minutes, .seconds{width:170px;height:160px;float:left; margin:25px 0 0 40px;} 
+.days {background-image:url('../images/days_bg.png'); margin-left:0px;}
+.hours {background-image:url('../images/hours_bg.png'); }
+.minutes {background-image:url('../images/minutes_bg.png')}
+.seconds {background-image:url('../images/seconds_bg.png')}
+#time div span{display:block; text-align:center; margin-top:20px; }
+.day-container{margin-left:6px !important}
+.hour-container{margin-left:52px !important}
+.minute-container{margin-left:52px !important}
+.second-container{margin-left:50px !important}
+
+/*************************************************/
+
+
+/*************** SUBSCRIBE FORM ******************/
+
+.subscribe, .aboutus{
+	margin-bottom: 40px;
+}
+.subscribe {
+	float:right;
+	background-image:url(../images/box_bg.html);
+	width:380px;
+	margin-top:25px;
+}
+.subscribetitle a {
+	color: #9a2e2b;
+	text-decoration: none;
+}
+
+#subscribeform {float:left;margin:7px 0 0 15px;}
+.email {background:#f8f8f8;width:240px;height:21px;border:5px solid #333;margin-top:20px;}
+.btn {width:110px;height:31px;background:#333;text-transform:uppercase;border:2px solid #330;font-size:14px;letter-spacing:1px;color:#f8f8f8; margin:20px 0px 0px 2px}
+.email, .btn{float:left}
+.btn:hover {background:#9a2e2b;cursor:pointer;}
+.btn:active {background:#666;}
+
+/*************************************************/
+
+
+/*************** SUBSCRIBE FORM ******************/
+
+#socials {clear:both;float:left;margin:17px 0 0 3px;}
+#socials a img {margin-left:11px;}
+
+/*************************************************/
+
+
+/********* GENERAL STRUCTURE AND HEADERS *********/
+
+#wrapper {
+	width:800px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	
+}
+.logo {
+	display:block;
+	margin:0 auto;
+	position:relative;
+	top:20px;
+}
+.maintitle {
+	font-size:40px;
+	color:#222339;
+	letter-spacing:1px;
+	text-align:center;
+	display:block;
+	margin-top:50px;
+	text-transform:uppercase
+}
+.titlemessage {
+	font-size:22px;
+	letter-spacing:1px;
+	color:#222339;
+	text-align:center;
+	background:url('../images/arrow.png') no-repeat right;
+	padding-right:0px;
+	height:39px;
+	line-height:39px;
+	width:280px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.aboutus {
+	width:100%;
+	margin-top:25px;
+	float: left;
+}
+.aboutustitle a {
+	color: #D77389;
+	text-decoration: none;
+}
+.aboutustitle a:hover {
+	color: #D77389;
+	text-decoration: underline;
+}
+.description {
+	font-family:"Times New Roman", Times, serif;
+	font-size:14px;
+	color:#4f4c3f;
+	line-height:26px;
+	font-style:italic;
+	margin-left:15px;
+	margin-top:20px;
+	float: left;
+	clear: both;
+}
+
+/*************************************************/
+
+
+/******************* FOOTER **********************/
+
+#footer {
+	clear:both;
+	height:37px;
+	background-color: #0F0F0F;
+}
+
+/*************************************************/
+#footer p {
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}

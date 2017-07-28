@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ANFC - Advanced Nursing and Family Care</title>
+<meta name="Description" content="" />
+<meta name="Keywords" content="nursing jobs, nursing aide jobs, healthcare jobs, healthcare, home nursing aides,
+home nurses, home healthcare, home aides, home health aides, home health nursing,
+contract nursing, staff nursing, staff nurses, nursing, nurses, nurse, aide,
+contract nurse, skilled nurses, skilled nursing, skilled nursing services, agency
+nurses, agency nursing, agency nurse, health, ADLs, travel nurse, travel nursing
+agency, travel nurse, medical service, home medical service, healthcare service,
+nursing services, home healthcare services
+" />
+<link href="styles/styles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="scripts/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="scripts/style.css" type="text/css" media="screen" />
+<script type="text/javascript" src="scripts/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+    <script language = "Javascript">
+function echeck(str) {
+
+		var at="@"
+		var dot="."
+		var lat=str.indexOf(at)
+		var lstr=str.length
+		var ldot=str.indexOf(dot)
+		if (str.indexOf(at)==-1){
+		   alert("Invalid E-mail ID")
+		   return false
+		}
+
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+		   alert("Invalid E-mail ID")
+		   return false
+		}
+
+		if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+		    alert("Invalid E-mail ID")
+		    return false
+		}
+
+		 if (str.indexOf(at,(lat+1))!=-1){
+		    alert("Invalid E-mail ID")
+		    return false
+		 }
+
+		 if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+		    alert("Invalid E-mail ID")
+		    return false
+		 }
+
+		 if (str.indexOf(dot,(lat+2))==-1){
+		    alert("Invalid E-mail ID")
+		    return false
+		 }
+		
+		 if (str.indexOf(" ")!=-1){
+		    alert("Invalid E-mail ID")
+		    return false
+		 }
+
+ 		 return true					
+	}
+function validate_required(name)
+{
+with (field)
+{
+  if (value==null||value=="")
+  {
+  alert(alerttxt);return false;
+  }
+  else
+  {
+  return true;
+  }
+}
+}
+function ValidateForm(){
+	var emailID=document.booking.email 
+	if ((emailID.value==null)||(emailID.value=="")){
+		alert("Please Enter your Email ID");
+		emailID.focus();
+		return false;
+	} 
+	if (document.booking.name.value=="")
+	{
+	alert("Please Enter Name");
+	return false;
+	}
+	if (document.booking.telephone.value=="")
+	{
+	alert("Please Enter Telephone Number");
+	return false;
+	}
+	if (document.booking.message.value=="")
+	{
+	alert("Please Enter the Enquiry");
+	return false;
+	}
+	
+	if (echeck(emailID.value)==false){
+		emailID.value="";
+		emailID.focus();
+		return false;
+	}
+	alert("ThankYou for Submitting your Enquiry we will get back to you in 24 hours.");
+ }
+
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="main">
+    <div class="header">
+      <div class="logo"><a href="index.html"><img src="images/logo.png" /></a></div>
+      <div class="logo-text">
+        <div class="phone">Office: 301-861-0003</div>
+      </div>
+      <div class="clear"></div>
+      <div class="menu">
+        <ul>
+          <li class="home"><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="compliance.html">Compliance</a></li>
+          <li><a href="employment.html">Employment</a></li>
+          <li class="contact contactcurrent"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div>
+      <div class="banner-left"><h1>Contact Us</h1>
+          <p>If you are interested in <strong>Advanced Nursing and Family Care (ANFC)</strong> services or employment, please contact us via phone<br/> 301-861-0003 or by using the following links.</p>
+          <h2><a href="services.html" style="color:#000000; font-weight:bold;">Our Services</a></h2>
+        <ul><li>Homecare</li>
+<li>Healthcare Facility Staffing</li>
+<li>Recruiting and Permanent Placement</li></ul></p>
+<h2><a href="employment.php" style="color:#000000; font-weight:bold;">Employment Opportunities</a></h2>
+<ul><li>Nursing</li>
+<li>Non-Medical Companions</li>
+<li>Corporate
+</li></ul> </p><h2>Please complete the form below:</h2></div>
+        <div class="banner"> 
+          <div align="right"><img src="images/ContactUs_image.jpg" width="530" height="300" /> </div>
+      </div>
+      
+      
+      <div class="content-area">
+        <div class="left-panel">
+          
+       <div id="fields"><table width="100%" align="center" cellpadding="0" cellspacing="0">
+  <form action="enquiry.php" method="post" name="booking" id="booking" onsubmit="return ValidateForm()" class="form">
+   
+    
+    <tr>
+      <td width="31%">Name:<span class="required">*</span></td>
+      <td width="69%" > <input name="name" type="text" class="text" size="45" id="name" />      </td>
+    </tr>
+    
+    
+    <tr>
+      <td>Email:</td>
+      <td ><input name="email" type="text" class="text" size="45" id="email" />      </td>
+    </tr>
+    <tr>
+      <td>Telephone Number:<span class="required">*</span> </td>
+      <td ><input name="telephone" type="text" class="text" size="45" onkeydown="javascript:fnOnlyNumerics();" id="budget" />      </td>
+    </tr>
+    <tr>
+      <td>Company Name: </td>
+      <td ><input name="companyname" type="text" class="text" size="45" onkeydown="javascript:fnOnlyNumerics();" id="number" />      </td>
+    </tr>
+    <tr>
+      <td>Comment/Question :<span class="required">*</span> <span class="required1"> </span></td>
+      <td ><textarea name="message" cols="35" rows="10" class="testi-input" id="message"></textarea></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td > <input name="submit" type="submit" class="button" value="SUBMIT" /><input type="reset" value="RESET" class="button" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2">* Required fields</td>
+      </tr>
+  </form>
+</table>
+        
+      </div>  
+          
+        </div>
+        <div class="right-panel"><h1>ANFC Menu</h1><ul><li><a href="index.html">Home</a></li><li><a href="aboutus.html">About Us</a></li>
+<li><a href="services.html">Our Services</a>
+  <ul>
+<li><a href="homecare.html">Homecare</a><ul>
+     <li><a href="homecare.html#medical">Medical</a></li>
+     <li><a href="homecare.html#nonmedical">Non-Medical</a></li></ul></li>
+<li><a href="healthcare.html">Healthcare Facility Staffing</a></li>
+<li><a href="recruiting.html">Recruiting and Placement Referral</a></li>
+  </ul></li>
+<li><a href="compliance.html">Compliance</a></li>
+<li><a href="employment.html">Employment Opportunities</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+        </ul>
+          <!--<div class="right-panel1"><img src="images/healthcare.jpg" width="111" height="161" />
+            <h1>Healthcare Facilities <br/>
+            </h1>
+          <div class="clear"></div>
+          <p>ANFC provides qualified and credentialed nursing professionals for in-home medical and non-medical care.
+
+</p>
+          <h3><a href="healthcare.html">Learn More</a></h3>
+        </div>-->
+        </div>
+        
+        <div class="clear"></div>
+      </div>
+      
+    </div><div class="license">Licensed in Washington, DC,<br/> Maryland and Virginia</div>
+  </div><div class="footer-wrapper"><div class="footer">
+        
+        <p class="copyright" style="font-weight:bold;">Copyright &copy; 2017 Advanced Nursing and Family Care (ANFC)</p>
+<p class="copyright"> <a href="terms-conditions.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a> </p>
+        <div class="clear"></div>
+      </div></div>
+</div>
+</body>
+</html>

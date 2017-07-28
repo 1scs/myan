@@ -1,0 +1,48 @@
+/*////////////////////// add plugins ///////////////////////////////////*/
+apply plugin: 'eclipse' //used for integration with eclipse
+apply plugin: 'eclipse-wtp' //used for eclipse fine-tuning
+apply plugin: 'war' //used for building a .war file
+
+eclipse.wtp.component
+{
+ resource sourcePath: "myanfc/.errordocs", deployPath: "/.errordocs"
+ resource sourcePath: "myanfc/css", deployPath: "/css"
+ resource sourcePath: "myanfc/images", deployPath: "/images" 
+ resource sourcePath: "myanfc/javascript", deployPath: "/javascript"
+ resource sourcePath: "myanfc/js", deployPath: "/js"
+ resource sourcePath: "myanfc/scripts", deployPath: "/scripts"
+ resource sourcePath: "myanfc/stats", deployPath: "/stats"
+ resource sourcePath: "myanfc/styles", deployPath: "/styles"
+}
+
+war 
+{
+ archiveName = 'myanfc.war'
+ from('myanfc')
+ {
+  include ".errordocs"
+  include "css/"
+  include "images/"
+  include "javascript/"
+  include "js/"
+  include "scripts/"
+  include "stats/"
+  include "styles/"
+  include ".htaccess"
+  include "aboutus.html"  
+  include "compliance.html" 
+  include "contact.html"
+  include "employment.html"
+  include "favicon.ico"
+  include "healthcare.html"
+  include "homecare.html"
+  include "index.html"
+  include "index-1.html"
+  include "missing.html"
+  include "privacy-policy.html"
+  include "recruiting.html"
+  include "services.html"
+  include "terms-conditions.html"
+  include "welcome.html"
+ }
+}

@@ -19,7 +19,7 @@ eclipse.wtp.component
 
 war 
 {
- archiveName = 'ROOT.war'
+ archiveName = 'myanfc.war'
  webXml =file('myanfc/WEB-INF/web.xml') 
  from('myanfc')
  {

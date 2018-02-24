@@ -4,7 +4,7 @@
  <display-name>MyANFC</display-name>
 
  <welcome-file-list>
-  <welcome-file>myanfc/jsp/index.html</welcome-file>
+  <welcome-file>jsp/index.html</welcome-file>
  </welcome-file-list>
 
 </web-app>

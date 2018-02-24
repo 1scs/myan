@@ -16,7 +16,7 @@ eclipse.wtp.component
  resource sourcePath: "myanfc/styles", deployPath: "/styles"
  resource sourcePath: "myanfc/WEB-INF", deployPath: "/WEB-INF"
 }
-
+ 
 war 
 {
  archiveName = 'myanfc.war'
